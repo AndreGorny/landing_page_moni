@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste carousel</title>
+    <style>
+        .carousel {
+            width: 300px; /* largura do carrossel */
+            height: auto; /* altura do carrossel */
+            overflow-x: auto; /* permite rolar horizontalmente */
+            white-space: nowrap; /* impede que as imagens quebrem para a próxima linha */
+            cursor: grab; /* muda o cursor para um cursor de mão quando o mouse estiver sobre o carrossel */
+        }
+    
+        .carousel img {
+            width: 100%; /* faz com que as imagens preencham todo o espaço disponível */
+            height: auto; /* mantém a proporção da imagem */
+        }
+    
+        /* quando o mouse está sobre o carrossel, o cursor muda para um cursor de mão com um ícone de arrastar */
+        .carousel:hover {
+            cursor: grabbing;
+        }
+    </style>
+</head>
+<body>
+    <section id="single-plantas">
+        <div class="wrap">
+        <ul class="nav nav-tabs">
+        <li class="click1">
+        <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab" aria-expanded="false">
+        PLANTAS
+        </a>
+        </li>
+        <li class="click3">
+        <a href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">
+        UNIDADES ESPECIAIS
+        </a>
+        </li>
+        <li class="click2 active">
+        <a href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab" aria-expanded="true">
+        IMAGENS
+        </a>
+        </li>
+        </ul>
+        <div class="tab-content">
+        <div role="tabpanel" class="tab-pane" id="tab-1">
+        
+        <div class="single-plantas-container">
+        <div class="slider-full full-plantas">
+        <ul class="slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
+        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><li class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" tabindex="0">
+        <a data-caption="STUDIO TIPO 27M²" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_STUDIO-REVFIN-1.jpg" tabindex="0">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_STUDIO-REVFIN-1.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        STUDIO TIPO 27M²
+        </p>
+        </li><li class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;" tabindex="-1">
+        <a data-caption="1 QUARTO TIPO 34M²" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_1QTO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_1QTO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        1 QUARTO TIPO 34M²
+        </p>
+        </li><li class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;" tabindex="-1">
+        <a data-caption="2 QUARTOS TIPO 55M²" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_2QTO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_2QTO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        2 QUARTOS TIPO 55M²
+        </p>
+        </li></div></div>
+        
+        
+        <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button></ul>
+        </div>
+        </div>
+        </div>
+        <div role="tabpanel" class="tab-pane  " id="tab-3">
+        <div class="single-plantas-container">
+        <div class="slider-full full-imagens">
+        <ul class="slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
+        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><li class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="DUPLEX COM 2 SUÍTES" data-fancybox="galeria-unidades" href="https://agl.eng.br/wp-content/uploads/2023/09/DUPLEX_2QTO-INFERIOR-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/DUPLEX_2QTO-INFERIOR-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        DUPLEX COM 2 SUÍTES
+        </p>
+        </li><li class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="DUPLEX COM 2 SUÍTES" data-fancybox="galeria-unidades" href="https://agl.eng.br/wp-content/uploads/2023/09/DUPLEX_2QTO-SUPERIOR-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/DUPLEX_2QTO-SUPERIOR-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        DUPLEX COM 2 SUÍTES
+        </p>
+        </li><li class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" tabindex="0" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+        <a data-caption="LOFTS" data-fancybox="galeria-unidades" href="https://agl.eng.br/wp-content/uploads/2023/09/LOFT-INFERIOR-REVFIN.jpg" tabindex="0">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/LOFT-INFERIOR-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        LOFTS
+        </p>
+        </li><li class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="LOFTS" data-fancybox="galeria-unidades" href="https://agl.eng.br/wp-content/uploads/2023/09/LOFT-SUPERIOR-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/LOFT-SUPERIOR-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        LOFTS
+        </p>
+        </li></div></div>
+        
+        
+        
+        <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button></ul>
+        </div>
+        </div>
+        </div>
+        <div role="tabpanel" class="tab-pane  active" id="tab-2">
+        
+        <div class="single-plantas-container">
+        <div class="slider-full full-imagens">
+        <ul class="slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
+        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 14881px;"><li class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="FACHADA" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/FACHADA_01.01.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/FACHADA_01.01.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        FACHADA
+        </p>
+        </li><li class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -647px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="FACHADA" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/FACHADA_01.02.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/FACHADA_01.02.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        FACHADA
+        </p>
+        </li><li class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -1294px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="FACHADA" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/FACHADA_02-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/FACHADA_02-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        FACHADA
+        </p>
+        </li><li class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -1941px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="FACHADA" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/FACHADA_03-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/FACHADA_03-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        FACHADA
+        </p>
+        </li><li class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -2588px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="COWORKING (TÉRREO)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/COWORKING-TERREO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/COWORKING-TERREO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        COWORKING (TÉRREO)
+        </p>
+        </li><li class="slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -3235px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="DUPLEX 2 QUARTOS (ESTAR)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/DUPLEX_2QTO-ESTAR-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/DUPLEX_2QTO-ESTAR-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        DUPLEX 2 QUARTOS (ESTAR)
+        </p>
+        </li><li class="slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -3882px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="DUPLEX 2 QUARTOS (SUÍTE)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/DUPLEX_2QTO-SUITE-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/DUPLEX_2QTO-SUITE-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        DUPLEX 2 QUARTOS (SUÍTE)
+        </p>
+        </li><li class="slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -4529px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="FITNESS (ÁTICO)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/FITNESS-ATICO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/FITNESS-ATICO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        FITNESS (ÁTICO)
+        </p>
+        </li><li class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -5176px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="GARDEN" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/GARDEN-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/GARDEN-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        GARDEN
+        </p>
+        </li><li class="slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -5823px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="GOURMET (ÁTICO)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/GOURMET-ATICO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/GOURMET-ATICO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        GOURMET (ÁTICO)
+        </p>
+        </li><li class="slick-slide" data-slick-index="10" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -6470px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="HALL (TÉRREO)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/HALL-TERREO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/HALL-TERREO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        HALL (TÉRREO)
+        </p>
+        </li><li class="slick-slide" data-slick-index="11" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -7117px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="LAVANDERIA (TÉRREO)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/LAVANDERIA-TERREO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/LAVANDERIA-TERREO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        LAVANDERIA (TÉRREO)
+        </p>
+        </li><li class="slick-slide" data-slick-index="12" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -7764px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="LOFT 1 QUARTO" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/LOFT_1QTO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/LOFT_1QTO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        LOFT 1 QUARTO
+        </p>
+        </li><li class="slick-slide" data-slick-index="13" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -8411px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="1 QUARTO (SALA)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_1QTO-SALA-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_1QTO-SALA-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        1 QUARTO (SALA)
+        </p>
+        </li><li class="slick-slide" data-slick-index="14" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -9058px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="2 QUARTOS (ESTAR)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_2QTO-ESTAR-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_2QTO-ESTAR-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        2 QUARTOS (ESTAR)
+        </p>
+        </li><li class="slick-slide" data-slick-index="15" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -9705px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="2 QUARTOS (SUÍTE)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_2QTO-SUITE-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_2QTO-SUITE-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        2 QUARTOS (SUÍTE)
+        </p>
+        </li><li class="slick-slide" data-slick-index="16" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -10352px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="STUDIO" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_STUDIO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/TIPO_STUDIO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        STUDIO
+        </p>
+        </li><li class="slick-slide" data-slick-index="17" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -10999px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="MARKET (TÉRREO)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/MARKET-TERREO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/MARKET-TERREO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        MARKET (TÉRREO)
+        </p>
+        </li><li class="slick-slide" data-slick-index="18" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -11646px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="PET PLACE E BICICLETÁRIO" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/PET-PLACE-E-BICICLETARIO-TERREO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/PET-PLACE-E-BICICLETARIO-TERREO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        PET PLACE E BICICLETÁRIO
+        </p>
+        </li><li class="slick-slide slick-current slick-active" data-slick-index="19" aria-hidden="false" tabindex="0" style="width: 647px; position: relative; left: -12293px; top: 0px; z-index: 999; opacity: 1;">
+        <a data-caption="SALÃO DE FESTAS" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/SALAO-FESTAS-TERREO-REVFIN.jpg" tabindex="0">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/SALAO-FESTAS-TERREO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        SALÃO DE FESTAS
+        </p>
+        </li><li class="slick-slide" data-slick-index="20" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -12940px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="SPORTS BAR (ÁTICO)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/SPORTS-BAR-ATICO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/SPORTS-BAR-ATICO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        SPORTS BAR (ÁTICO)
+        </p>
+        </li><li class="slick-slide" data-slick-index="21" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -13587px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="SUNSET LOUNGE (ÁTICO)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/SUNSET-LOUNGE-ATICO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/SUNSET-LOUNGE-ATICO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        SUNSET LOUNGE (ÁTICO)
+        </p>
+        </li><li class="slick-slide" data-slick-index="22" aria-hidden="true" tabindex="-1" style="width: 647px; position: relative; left: -14234px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;">
+        <a data-caption="TERRAÇO (ÁTICO)" data-fancybox="galeria-plantas" href="https://agl.eng.br/wp-content/uploads/2023/09/TERRACO-ATICO-REVFIN.jpg" tabindex="-1">
+        <img src="https://agl.eng.br/wp-content/uploads/2023/09/TERRACO-ATICO-REVFIN.jpg" alt="Moní Residence | AGL Incorporadora">
+        </a>
+        <p class="text">
+        TERRAÇO (ÁTICO)
+        </p>
+        </li></div></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button></ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
+</body>
+</html>
