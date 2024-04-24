@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morar ou investir no Alto da Glória</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f4390c520d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img id="logo" src="/midia/logo_horiz.png" alt="Logo andré gorny - consultoriaimobiliária">
+        </div>
+        <div class="phone">
+            <a href="https://api.whatsapp.com/send?phone=5541985350740" target="_blank">
+                (41) 98535-0740
+            </a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="img">
+            <img src="/midia/fachada.jpg" alt="Fachada Moní">
+        </div>
+
+        <div class="text">
+            <h1>Morar ou investir no Alto da Glória</h1>
+            <h2>Seu novo apê em Curitiba está à distância de um click!</h2>
+        </div>
+
+        <div class="form">
+            <form action="cadastro.php" method="POST">
+                <div id="contact" class="input-container">
+                    <input class="input" type="text" name="name" id="name" placeholder="Nome">
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="input-container">
+                    <input type="text" name="phone" id="phone" placeholder="Fone com DDD">
+                </div>
+                <div class="input-container">
+                    <label for="contact" hidden>Forma de Contato</label>
+                    <select name="contact" id="contact">
+                        <optgroup label="Forma de Contato">
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="telefone">Telefone</option>
+                            <option value="email">E-mail</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="input-container ic5">
+                    <button>Quero mais informações!</button>
+                </div>
+                <p>Ao clicar no botão acima você aceita receber contato sobre esse e outros empreendimentos imobiliários.</p>
+            </form>
+        </div>
+        <div id="photos">
+            <h2>Imagens</h2>
+            <div class="photo-box">
+                <div class="photo-1">
+                    <img src="/midia/hall.jpg" alt="Hall de entrada">
+                </div>
+                <div class="photo-2">
+                    <img src="/midia/sunset.jpg" alt="Sunset Lounge">
+                </div>
+                <div class="photo-3">
+                    <img src="/midia/1qt.jpg" alt="Sala apartamento 1 quarto">
+                </div>
+                <div class="photo-4">
+                    <img src="/midia/std.jpg" alt="Studio">
+                </div>
+            </div>
+        </div>
+
+        <div id="plans">
+            <h2>Plantas</h2>
+            <div class="photo-box">
+                <div class="plan-1">
+                    <img src="/midia/p_std.jpg" alt="Planta studio">
+                    <p>Studio - 27m²</p>
+                </div>
+                <div class="plan-2">
+                    <img src="/midia/p_1qt.jpg" alt="Planta 1 quarto">
+                    <p>1 quarto - 34m²</p>
+                </div>
+                <div class="plan-3">
+                    <img src="/midia/p_2qt.jpg" alt="Planta 2 quartos">
+                    <p>2 quartos - 55m²</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="diferentials">
+            <h2>Diferenciais</h2>
+            <ul>
+                <li>Localização privilegiada</li>
+                <li>Projeto otimizado a partir de estudos de conforto térmico e lumínico</li>
+                <li>Rooftop compartilhado</li>
+                <li>Fechadura eletrônica</li>
+                <li>Infra para ar-condicionado e cooktop</li>
+                <li>Manta de isolamento acústico com contrapiso flutuante</li>
+                <li>Sacada em todos os apartamentos <span>(algumas unidades com churrasqueira)</span></li>
+            </ul>
+        </div>
+    </main>
+
+    <hr>
+
+    <footer>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#photos">Fotos</a>
+                </li>
+                <li>
+                    <a href="#plans">Plantas</a>
+                </li>
+                <li>
+                    <a href="#diferentials">Diferenciais</a>
+                </li>
+                <a href="#contact">
+                    <button>QUERO MAIS INFORMAÇÕES!</button>
+                </a>
+            </ul>
+        </div>
+        <div class="copy">
+            <small>&copy; Copyright 2024 - André Gorny. Todos os direitos reservados</small>
+        </div>
+        <div class="social">
+            <div>
+                <a href="https://www.instagram.com/andregorny.broker/" target="_blank"><i class="fa-brands fa-instagram icon"></i></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/andregorny/" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a>
+            </div>
+            <div></div>
+                <a href="https://github.com/AndreGorny" target="_blank"><i class="fa-brands fa-github icon"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
