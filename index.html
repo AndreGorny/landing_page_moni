@@ -9,47 +9,39 @@
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img id="logo" src="/midia/logo_horiz.png" alt="Logo andré gorny - consultoriaimobiliária">
+        <div class="header-container">
+            <div class="logo">
+                <img id="logo" src="/midia/logo_horiz.png" alt="Logo andré gorny - consultoriaimobiliária">
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="#photos">Fotos</a>
+                    <a href="#plans">Plantas</a>
+                    <a href="#diferentials">Diferenciais</a>
+                    <a href="#contact">Contato</a>
+                </nav>
+            </div>
             <div class="phone">
                 <a href="https://api.whatsapp.com/send?phone=5541985350740" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i> (41) 98535-0740
                 </a>
             </div>
         </div>
-        <nav>
-            <div class="header-nav">
-                <ul>
-                    <li>
-                        <a href="#photos">Fotos</a>
-                    </li>
-                    <li>
-                        <a href="#plans">Plantas</a>
-                    </li>
-                    <li>
-                        <a href="#diferentials">Diferenciais</a>
-                    </li>
-                    <a href="#contact">
-                        <button>QUERO MAIS INFORMAÇÕES!</button>
-                    </a>
-                </ul>
-            </div>
-        </nav>
     </header>
-    
+
     <main>
         <div class="img">
             <img src="/midia/fachada.jpg" alt="Fachada Moní">
         </div>
 
-        <div class="main-text">
+        <div class="main-text" id="contact">
             <h1>Morar ou investir no Alto da Glória</h1>
             <h2>Seu novo apê em Curitiba está à distância de um click!</h2>
         </div>
 
-        <div class="form">
+        <div class="form" id="form">
             <form action="cadastro.php" method="POST">
-                <div id="contact" class="input-container">
+                <div class="input-container">
                     <input class="input" type="text" name="name" id="name" placeholder="Nome">
                 </div>
                 <div class="input-container">

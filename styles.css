@@ -3,63 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #363430;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
 }
 
-header {
-    height: 70px;
-    background-color: rgba(54, 52, 48, 0.95);
-    display: block;
-    position: relative;
-}
-
-.logo-container {
-    width: 100%;
-    height: 60%;
-    position: relative;
-    top: 20px;
+.header-container {
+    max-width: 1080px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-}
-
-#logo {
-    position: absolute;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
     align-items: center;
-    max-width: 100%;
-    max-height: 100%;
+    justify-content: space-evenly;
 }
 
-.phone {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
+header {
+    background-color: rgba(54, 52, 48, 0.95);
+    width: 100%;
+    position: relative;
+    padding: 10px;
 }
 
-.fa-whatsapp {
-    margin: 2px;
+.logo,.phone {
+    width: 50%;
 }
 
-.phone a{
-    text-decoration: none;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    font-size: 12px;
+.logo img {
+    width: 100%;
+    max-width: 150px;
 }
 
-.phone a:hover, .fa-whatsapp:hover {
-    color: #f9aa0b;
-}
-
-.header-nav {
+.menu {
     display: none;
+}
+
+.phone a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    float: right;
 }
 
 .img {
@@ -343,57 +326,42 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    header {
-        height: 70px;
-        background-color: rgba(54, 52, 48, 0.95);
+    .logo,.phone {
+        width: 25%;
+    }
+    
+    .logo img {
+        width: 100%;
+    }
+    
+    .menu {
+        width: 50%;
         display: flex;
-        justify-content: space-between;
-        position: relative;
-    }
-    
-    .logo-container {
-        width: 30%;
-        height: 100%;
-        display: grid;
-        grid-template-rows: auto auto;
-    }
-    
-    #logo {
-        position: absolute;
-        display: block;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100%;
-        max-height: 100%;
+        border-inline-start: 1px solid #fff;
+        border-right: 1px solid #fff;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     
-    .phone {
-        display: block;
-        justify-content: center;
-        margin-top: 5px;
-        position: relative;
-    }
-    
-    .fa-whatsapp {
-        margin: 2px;
-    }
-    
-    .phone a{
+    .menu nav a {
+        color: #fff;
         text-decoration: none;
-        color: white;
-        display: flex;
-        justify-content: center;
-        margin-top: 5px;
-        font-size: 12px;
+        padding: 10px;
+        font-size: 16px;
     }
     
-    .phone a:hover, .fa-whatsapp:hover {
+    .menu nav a:hover {
         color: #f9aa0b;
     }
-
-    .header-nav {
-        display: inline-flex;
-        justify-content: space-between;
+    
+    .phone a:hover {
+        color: #f9aa0b;
+    }
+    
+    .phone a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
     }
 }
