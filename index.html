@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morar ou investir no Alto da Glória</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f4390c520d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,8 +16,8 @@
             </div>
             <div class="menu">
                 <nav>
-                    <a href="#photos">Fotos</a>
-                    <a href="#plans">Plantas</a>
+                    <a href="#slider">Fotos</a>
+                    <a href="#plan-slider">Plantas</a>
                     <a href="#diferentials">Diferenciais</a>
                     <a href="#contact">Contato</a>
                 </nav>
@@ -66,15 +67,56 @@
                 <span>Ao clicar no botão acima você aceita receber contato sobre esse e outros empreendimentos imobiliários.</span>
             </form>
         </div>
-        <div id="photos">
-            <h3 class="section-title">Imagens</h3>
-            <div class="photo-box">
-                    <img src="/midia/hall.jpg" alt="Hall de entrada">
-                    <img src="/midia/sunset.jpg" alt="Sunset Lounge">
-                    <img src="/midia/1qt.jpg" alt="Sala apartamento 1 quarto">
-                    <img src="/midia/std.jpg" alt="Studio">
+
+        <!--Início Slideshow photos-->
+        
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                                <img src="/midia/sunset.jpg" alt="Sunset Lounge">
+                                <div class="label">
+                                    Sunset Lounge
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <img src="/midia/hall.jpg" alt="Hall de Entrada">
+                                <div class="label">
+                                    Hall de Entrada
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                                <img src="/midia/std.jpg" alt="Apartamento Studio">
+                                <div class="label">Studio</div>
+                            </div>
+                        </div>
+                        <div class="slide slide_4">
+                            <div class="slide-content">
+                                <img src="/midia/1qt.jpg" alt="Apartamento 1 quarto">
+                                <div class="label">Apartamento 1 quarto</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bullets">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
             </div>
         </div>
+
         <hr>
         <div id="diferentials">
             <h3>Diferenciais</h3>
@@ -89,21 +131,40 @@
             </ul>
         </div>
 
-        <div id="plans">
-            <h3>Plantas</h3>
-            <div class="photo-box">
-                <div class="plan-1">
-                    <img src="/midia/p_std.jpg" alt="Planta studio">
-                    <p>Studio - 27m²</p>
+        <div id="plan-slider">
+            <input type="radio" name="slider" id="pslide1" checked>
+            <input type="radio" name="slider" id="pslide2">
+            <input type="radio" name="slider" id="pslide3">
+
+            <div id="plan-slides">
+                <div id="plan-overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                                <img src="/midia/p_std.jpg" alt="Planta studio">
+                                <div class="plan-label">Stúdio</div>
+                            </div>
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <img src="/midia/p_1qt.jpg" alt="Planta 1 quarto">
+                                <div class="plan-label">1 quarto</div>
+                            </div>
+                        </div>
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                                <img src="/midia/p_2qt.jpg" alt="Planta 2 quartos">
+                                <div class="plan-label">2 quartos</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="plan-2">
-                    <img src="/midia/p_1qt.jpg" alt="Planta 1 quarto">
-                    <p>1 quarto - 34m²</p>
-                </div>
-                <div class="plan-3">
-                    <img src="/midia/p_2qt.jpg" alt="Planta 2 quartos">
-                    <p>2 quartos - 55m²</p>
-                </div>
+            </div>
+
+            <div id="plan-bullets">
+                <label for="pslide1"></label>
+                <label for="pslide2"></label>
+                <label for="pslide3"></label>
             </div>
         </div>
 
@@ -116,10 +177,10 @@
             <div class="footer-nav">
                 <ul>
                     <li>
-                        <a href="#photos">Fotos</a>
+                        <a href="#slider">Fotos</a>
                     </li>
                     <li>
-                        <a href="#plans">Plantas</a>
+                        <a href="#plan-slider">Plantas</a>
                     </li>
                     <li>
                         <a href="#diferentials">Diferenciais</a>
@@ -131,7 +192,7 @@
             </div>
         </nav>
         <div class="copy">
-            <small>&copy; Copyright 2024 - André Gorny. Todos os direitos reservados</small>
+            <small>&copy; 2024 - Created and developed by <a href="https://github.com/AndreGorny">André Gorny</a>. All rights reserved.</small>
         </div>
         <div class="social">
             <div>
@@ -140,8 +201,8 @@
             <div>
                 <a href="https://www.linkedin.com/in/andregorny/" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a>
             </div>
-            <div></div>
-                <a href="https://github.com/AndreGorny" target="_blank"><i class="fa-brands fa-github icon"></i></a>
+            <div>
+                <a href="https://www.youtube.com/@andregorny.broker" target="_blank"><i class="fa-brands fa-youtube icon"></i></a>
             </div>
         </div>
     </footer>
